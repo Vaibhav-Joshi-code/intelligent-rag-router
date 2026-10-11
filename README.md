@@ -268,8 +268,7 @@ Docker uses a named volume for SQLite and the external Pinecone index for vector
 
 Submit this folder as the repository root, plus a YouTube explanation covering the three algorithms, the router's decisions, automatic CRAG escalation, multi-step planning, source citations, and observed traces.
 
-- **GitHub repository:** add the actual published URL.
-- **YouTube video:** add the actual accessible URL.
+- **YouTube video:** [(https://youtu.be/Z6X4nIad73Y)]
 - **Formal study notes:** [FormalNotes.md](FormalNotes.md).
 
 
