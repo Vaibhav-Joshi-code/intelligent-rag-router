@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ChaiTech · RAG Strategy Lab</title>
+
+  <link rel="stylesheet" href="/static/styles.css">
+  <script src="/static/app.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div>
+      <p class="eyebrow">CHAITECH / KNOWLEDGE SYSTEMS</p>
+
+      <h1>One question. The right RAG.</h1>
+
+      <p>
+        Watch the router choose, inspect the evidence, and follow every correction.
+      </p>
+    </div>
+
+    <span class="pill">Pinecone · LangGraph</span>
+  </header>
+
+  <main>
+    <div class="strategy-cards">
+      <article id="card-simple">
+        <span>01 / SIMPLE RAG</span>
+        <h2>The focused answer</h2>
+        <p>Retrieve once, check the evidence, answer with sources.</p>
+      </article>
+
+      <article id="card-crag">
+        <span>02 / CORRECTIVE RAG</span>
+        <h2>A second look</h2>
+        <p>Use retrieval feedback to rewrite and search again.</p>
+      </article>
+
+      <article id="card-multi_step">
+        <span>03 / MULTI-STEP RAG</span>
+        <h2>The bigger picture</h2>
+        <p>
+          Plan subquestions, gather evidence, then combine the answer.
+        </p>
+      </article>
+    </div>
+
+    <div class="workspace">
+      <section class="panel">
+        <div class="row">
+          <h2>Policy conversation</h2>
+          <button class="secondary" id="new">New conversation</button>
+        </div>
+
+        <p id="session" class="muted"></p>
+
+        <div id="messages" aria-live="polite">
+          <p class="welcome">
+            Start with a ChaiTech policy question. The router will choose
+            the strategy automatically.
+          </p>
+        </div>
+
+        <div class="examples">
+          <button>What is ChaiTech's learning budget?</button>
+
+          <button>
+            Explain ChaiTech's skill-up money and claiming process.
+          </button>
+
+          <button>
+            Compare the carry-forward rules for annual leave and learning budget.
+          </button>
+        </div>
+
+        <form id="chat-form">
+          <label>
+            Your question
+
+            <textarea
+              id="question"
+              maxlength="3000"
+              required
+              placeholder="Ask about leave, learning, remote work, travel, or security…"
+            ></textarea>
+          </label>
+
+          <div class="row">
+            <label>
+              Source filter
+
+              <select id="source">
+                <option value="">All indexed documents</option>
+              </select>
+            </label>
+
+            <button id="send">Ask ChaiTech →</button>
+          </div>
+        </form>
+
+        <p id="status" role="status" class="muted"></p>
+
+        <button id="retry" class="secondary" hidden>
+          Retry the same request
+        </button>
+      </section>
+
+      <aside>
+        <section class="panel">
+          <p class="eyebrow">ROUTING DECISION</p>
+
+          <h2 id="route">Waiting for a question</h2>
+
+          <p id="reason" class="muted">
+            Initial strategy and final strategy will appear here.
+          </p>
+
+          <p id="stats" class="muted"></p>
+
+          <h3>What happened</h3>
+
+          <ol id="events"></ol>
+
+          <details>
+            <summary>Plan &amp; trace details</summary>
+
+            <pre id="trace">No request yet.</pre>
+          </details>
+        </section>
+
+        <section class="panel">
+          <p class="eyebrow">CHECK THE RECEIPTS</p>
+
+          <h2>Sources</h2>
+
+          <div id="sources">
+            <p class="muted">
+              Open an excerpt to inspect the support for an answer.
+            </p>
+          </div>
+        </section>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    Fictional ChaiTech policies · Strategies are chosen by the model and
+    checked against retrieved evidence.
+    <a href="/docs">API documentation</a>
+  </footer>
+</body>
+</html>
