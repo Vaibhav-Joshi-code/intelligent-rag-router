@@ -1,0 +1,326 @@
+[
+  {
+    "id": "Q01",
+    "question": "what is learning budget of ChaiTech",
+    "initial_strategies": [
+      "simple"
+    ],
+    "final_strategies": [
+      "simple",
+      "crag"
+    ],
+    "sources": [
+      "learning_budget.md"
+    ],
+    "patterns": [
+      "20,?000|twenty thousand",
+      "calendar year"
+    ],
+    "status": "answered",
+    "session_group": "learning"
+  },
+  {
+    "id": "Q02",
+    "question": "Does unused budget roll over?",
+    "initial_strategies": [
+      "simple"
+    ],
+    "final_strategies": [
+      "simple",
+      "crag"
+    ],
+    "sources": [
+      "learning_budget.md"
+    ],
+    "patterns": [
+      "no|not|doesn.t"
+    ],
+    "status": "answered",
+    "session_group": "learning"
+  },
+  {
+    "id": "Q03",
+    "question": "How many paid annual leave days does ChaiTech offer?",
+    "initial_strategies": [
+      "simple"
+    ],
+    "final_strategies": [
+      "simple",
+      "crag"
+    ],
+    "sources": [
+      "leave_policy.md"
+    ],
+    "patterns": [
+      "24|twenty.four"
+    ],
+    "status": "answered",
+    "session_group": "leave"
+  },
+  {
+    "id": "Q04",
+    "question": "How many can I carry forward?",
+    "initial_strategies": [
+      "simple"
+    ],
+    "final_strategies": [
+      "simple",
+      "crag"
+    ],
+    "sources": [
+      "leave_policy.md"
+    ],
+    "patterns": [
+      "five|5"
+    ],
+    "status": "answered",
+    "session_group": "leave"
+  },
+  {
+    "id": "Q05",
+    "question": "How many days per week may ChaiTech employees work from home?",
+    "initial_strategies": [
+      "simple"
+    ],
+    "final_strategies": [
+      "simple",
+      "crag"
+    ],
+    "sources": [
+      "remote_work.md"
+    ],
+    "patterns": [
+      "three|3"
+    ],
+    "status": "answered"
+  },
+  {
+    "id": "Q06",
+    "question": "What is the ChaiTech domestic travel meal cap?",
+    "initial_strategies": [
+      "simple"
+    ],
+    "final_strategies": [
+      "simple",
+      "crag"
+    ],
+    "sources": [
+      "travel_policy.md"
+    ],
+    "patterns": [
+      "800|eight hundred"
+    ],
+    "status": "answered"
+  },
+  {
+    "id": "Q07",
+    "question": "How quickly should a lost ChaiTech laptop be reported?",
+    "initial_strategies": [
+      "simple"
+    ],
+    "final_strategies": [
+      "simple",
+      "crag"
+    ],
+    "sources": [
+      "security_policy.md"
+    ],
+    "patterns": [
+      "one hour|1 hour"
+    ],
+    "status": "answered"
+  },
+  {
+    "id": "Q08",
+    "question": "ChaiTech skill-up money thing: what is the allowance called and how can I claim it?",
+    "initial_strategies": [
+      "crag"
+    ],
+    "final_strategies": [
+      "crag"
+    ],
+    "sources": [
+      "learning_budget.md"
+    ],
+    "patterns": [
+      "20,?000|twenty thousand",
+      "approval|approv",
+      "receipt"
+    ],
+    "status": "answered"
+  },
+  {
+    "id": "Q09",
+    "question": "I am confused about ChaiTech unused-vacation carry stuff. Explain the expiry rule.",
+    "initial_strategies": [
+      "crag"
+    ],
+    "final_strategies": [
+      "crag"
+    ],
+    "sources": [
+      "leave_policy.md"
+    ],
+    "patterns": [
+      "March 31|31(?:st)? (?:of )?March"
+    ],
+    "status": "answered"
+  },
+  {
+    "id": "Q10",
+    "question": "ChaiTech travel food-money cap thing: explain the rule for actual spending.",
+    "initial_strategies": [
+      "crag"
+    ],
+    "final_strategies": [
+      "crag"
+    ],
+    "sources": [
+      "travel_policy.md"
+    ],
+    "patterns": [
+      "800|eight hundred",
+      "actual"
+    ],
+    "status": "answered"
+  },
+  {
+    "id": "Q11",
+    "question": "Compare ChaiTech carry-forward rules for annual leave and unused learning budget.",
+    "initial_strategies": [
+      "multi_step"
+    ],
+    "final_strategies": [
+      "multi_step"
+    ],
+    "sources": [
+      "leave_policy.md",
+      "learning_budget.md"
+    ],
+    "patterns": [
+      "five|5",
+      "March 31|31(?:st)? (?:of )?March",
+      "no|not|doesn.t"
+    ],
+    "status": "answered"
+  },
+  {
+    "id": "Q12",
+    "question": "Explain ChaiTech manager approval requirements for annual leave, remote work, and learning purchases.",
+    "initial_strategies": [
+      "multi_step"
+    ],
+    "final_strategies": [
+      "multi_step"
+    ],
+    "sources": [
+      "leave_policy.md",
+      "remote_work.md",
+      "learning_budget.md"
+    ],
+    "patterns": [
+      "manager"
+    ],
+    "status": "answered"
+  },
+  {
+    "id": "Q13",
+    "question": "Compare ChaiTech reimbursement deadlines and evidence requirements for business travel and learning purchases.",
+    "initial_strategies": [
+      "multi_step"
+    ],
+    "final_strategies": [
+      "multi_step"
+    ],
+    "sources": [
+      "travel_policy.md",
+      "learning_budget.md"
+    ],
+    "patterns": [
+      "30|thirty",
+      "receipt",
+      "approval|approv"
+    ],
+    "status": "answered"
+  },
+  {
+    "id": "Q14",
+    "question": "I will work remotely and then attend approved domestic business travel. Explain the remote core hours and meal/hotel caps.",
+    "initial_strategies": [
+      "multi_step"
+    ],
+    "final_strategies": [
+      "multi_step"
+    ],
+    "sources": [
+      "remote_work.md",
+      "travel_policy.md"
+    ],
+    "patterns": [
+      "10",
+      "800|eight hundred",
+      "3,?000|three thousand"
+    ],
+    "status": "answered"
+  },
+  {
+    "id": "Q15",
+    "question": "What is the exact salary of ChaiTech's CEO?",
+    "initial_strategies": [
+      "simple",
+      "crag"
+    ],
+    "final_strategies": [
+      "crag"
+    ],
+    "sources": [],
+    "patterns": [],
+    "status": "insufficient_evidence"
+  },
+  {
+    "id": "Q16",
+    "question": "What is ChaiTech learning budget?",
+    "initial_strategies": [
+      "simple"
+    ],
+    "final_strategies": [
+      "crag"
+    ],
+    "sources": [],
+    "patterns": [],
+    "status": "insufficient_evidence",
+    "source_filter": "security_policy.md",
+    "note": "Deliberate wrong-source filter demonstrates runtime escalation; the filter must remain enforced during correction."
+  },
+  {
+    "id": "Q17",
+    "question": "Compare ChaiTech annual leave and parental leave entitlements.",
+    "initial_strategies": [
+      "multi_step"
+    ],
+    "final_strategies": [
+      "multi_step"
+    ],
+    "sources": [],
+    "patterns": [],
+    "status": "insufficient_evidence"
+  },
+  {
+    "id": "Q18",
+    "question": "What about that?",
+    "initial_strategies": [
+      "simple",
+      "crag",
+      "multi_step"
+    ],
+    "final_strategies": [
+      "simple",
+      "crag",
+      "multi_step"
+    ],
+    "sources": [],
+    "patterns": [],
+    "status": "clarification_needed",
+    "note": "Fresh session has no referent."
+  }
+]
